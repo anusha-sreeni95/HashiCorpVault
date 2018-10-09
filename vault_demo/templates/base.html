@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Cache-Control" content="no-store" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="cache-control" content="must-revalidate" />
+    <title>Local</title>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/bootstrap-theme.min.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/app.css' %}"/>
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}"/>
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/js-cookie.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/scroll.js' %}"></script>
+    <script src="{% static 'js/app.js' %}" type="text/javascript"></script>
+</head>
+<body oncontextmenu="return false;">
+    <script>{% block script %}{% endblock %}</script>
+    <div class="container">
+        {% block content %}
+        {% endblock %}
+    </div>
+</body>
+</html>

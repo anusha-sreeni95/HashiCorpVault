@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% load bootstrap3 %}
+{% load static %}
+{% block content %}
+<h3>{{message}}</h3>
+<br />
+<br />
+<input type=button value="Previous Page" class="btn btn-primary" onClick="javascript:history.go(-1);">
+{% endblock %}
